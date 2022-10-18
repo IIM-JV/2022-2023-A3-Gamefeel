@@ -5,7 +5,7 @@ using UnityEngine;
 
 #endregion
 
-public class CubeBehaviour : MonoBehaviour
+public class DoTweenExample : MonoBehaviour
 {
     // Start is called before the first frame update
     private void Start()

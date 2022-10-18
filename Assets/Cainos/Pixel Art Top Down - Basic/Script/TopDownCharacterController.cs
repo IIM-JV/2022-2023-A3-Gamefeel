@@ -16,12 +16,6 @@ public class TopDownCharacterController : MonoBehaviour
     {
         direction = context.ReadValue<Vector2>();
         UpdateAnimations(direction);
-        Lol();
-    }
-
-    private void Lol()
-    {
-        Debug.Log("merdat");
     }
 
     private void Awake()

@@ -93,6 +93,9 @@
       <scope name="Unity Custom Files" />
     </order>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2FDxVD7sf0pKlM3DRJ1q8HTJkUX" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -165,6 +168,9 @@
       <workItem from="1666098436920" duration="1782000" />
       <workItem from="1666100979906" duration="454000" />
       <workItem from="1666101468050" duration="205000" />
+      <workItem from="1666101808190" duration="887000" />
+      <workItem from="1666103046064" duration="845000" />
+      <workItem from="1666104923504" duration="1148000" />
     </task>
     <servers />
   </component>
