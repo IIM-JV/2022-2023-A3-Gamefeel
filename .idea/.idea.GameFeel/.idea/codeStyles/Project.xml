@@ -1,0 +1,12 @@
+﻿<component name="ProjectCodeStyleConfiguration">
+  <code_scheme name="Project" version="173">
+    <option name="FORMATTER_TAGS_ENABLED" value="true" />
+    <option name="ENABLE_SECOND_REFORMAT" value="true" />
+    <option name="DO_NOT_FORMAT">
+      <list>
+        <fileSet type="globPattern" pattern="**/Library/*" />
+        <fileSet type="globPattern" pattern="**/PLugins/*" />
+      </list>
+    </option>
+  </code_scheme>
+</component>
