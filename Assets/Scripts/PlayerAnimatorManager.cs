@@ -1,35 +1,11 @@
 ﻿using UnityEngine;
-using UnityEngine.InputSystem;
 
-public class TopDownCharacterController : MonoBehaviour
+public class PlayerAnimatorManager : AnimatorManager
 {
-    public float speed;
-
     private static readonly int Direction = Animator.StringToHash("Direction");
     private static readonly int IsMoving = Animator.StringToHash("IsMoving");
 
-    private Animator animator;
-    private Vector2 direction;
-    private Rigidbody2D myRB2D;
-
-    public void OnMove(InputAction.CallbackContext context)
-    {
-        direction = context.ReadValue<Vector2>();
-        UpdateAnimations(direction);
-    }
-
-    private void Awake()
-    {
-        myRB2D = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
-    }
-
-    private void FixedUpdate()
-    {
-        myRB2D.velocity = speed * direction;
-    }
-
-    private void UpdateAnimations(Vector2 newDirection)
+    public override void UpdateAnimations(Vector2 newDirection)
     {
         var isMoving = newDirection.magnitude > 0;
         animator.SetBool(IsMoving, isMoving);

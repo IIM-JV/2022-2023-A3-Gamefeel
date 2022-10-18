@@ -1,9 +1,5 @@
-#region
-
 using DG.Tweening;
 using UnityEngine;
-
-#endregion
 
 public class DoTweenExample : MonoBehaviour
 {
@@ -18,6 +14,7 @@ public class DoTweenExample : MonoBehaviour
         const float newPeriod = 2 * Mathf.PI / 3;
         if (time <= 0) return 0;
         if (time >= 1) return 1;
+
         return -Mathf.Pow(2, 10 * time - 10) * Mathf.Sin((time * 10 - 10.75f) * newPeriod);
 
         // Modern version
