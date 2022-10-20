@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class TopDownCharacterController : MonoBehaviour
+public class PlayerCharacterController : MonoBehaviour
 {
     private AnimatorManager playerAnimatorManager;
     private Movement2D playerMovement;
