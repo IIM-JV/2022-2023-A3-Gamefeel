@@ -7,15 +7,12 @@ public class PlayerSmokeStep : MonoBehaviour
     private float lastWalkingStart;
     private VisualEffect visualEffect;
 
-    public void UpdateWalkingDirection(Vector3 newDirection)
-    {
-        visualEffect.SetVector3("Walking Direction", newDirection);
-    }
-
     public void UpdateWalkingState(bool isWalking)
     {
         if (isWalking)
             lastWalkingStart = Time.time;
+        else
+            visualEffect.SetFloat("Walking Time", 0);
         isCurrentlyWalking = isWalking;
     }
 

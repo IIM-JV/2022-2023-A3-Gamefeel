@@ -15,7 +15,6 @@ public class PlayerCharacterController : MonoBehaviour
         var direction = context.ReadValue<Vector2>();
         playerAnimatorManager.UpdateAnimations(direction);
         playerMovement.SetDirection(direction);
-        smokeStep.UpdateWalkingDirection(direction);
         smokeStep.UpdateWalkingState(context.performed);
     }
 
